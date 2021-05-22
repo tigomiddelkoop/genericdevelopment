@@ -1,65 +1,29 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    return (
+        <div>
+            <Head>
+                <title>GenericDevelopment</title>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <div
+                className={"h-screen w-full text-white flex flex-col bg-gray-800 items-center justify-center text-center"}>
+                <div className={""}>
+                    <div className={"jetbrains font-light lg:text-9xl text-4xl"}>We are</div>
+                    <div className={"jetbrains font-light lg:text-9xl text-4xl mb-2"}>GenericDevelopment</div>
+                    <div className={"jetbrains font-light text-1xl mb-8"}>An opensource development company which strives to build and improve tech</div>
+                </div>
+                {/*<div className={"flex flex-col"}>*/}
+                {/*    <p className={"mb-2"}>In the meantime if you are intrested my portfolio while I am building this site</p>*/}
+                {/*    <div>*/}
+                {/*        <a href="https://tigo.tech"*/}
+                {/*           className={"jetbrains font-light text-xl border hover:bg-gray-500 rounded-lg py-1 px-2"}>tigo.tech</a>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
+            </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    )
 }
